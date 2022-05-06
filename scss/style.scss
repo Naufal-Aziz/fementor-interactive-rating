@@ -1,0 +1,107 @@
+@import 'config';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $very-dark-blue;
+}
+
+.card {
+    margin: 10% auto;
+    background-color: darken($dark-blue, 5%);
+    width: 340px;
+    padding: 2rem;
+    border: none;
+    border-radius: 25px;
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        color: $primary-color;
+        background-color: lighten($dark-blue, 2%);
+        margin-top: 0;
+    }
+
+    h1 {
+        font-family: $font-stack;
+        color: $white;
+        font-size: 32px;
+    }
+
+    p {
+        color: $light-gray;
+        font-family: $font-stack;
+        font-size: 15px;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+
+        button {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            border: none;
+            border-radius: 50%;
+            background-color: lighten($dark-blue, 2%);
+            color: $light-gray;
+
+            &:hover {
+                background-color: $primary-color;
+                color: $white;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    input {
+        display: block;
+        width: 100%;
+        background-color: $primary-color;
+        color: $white;
+        font-family: $font-stack;
+        font-weight: 700;
+        border: none;
+        border-radius: 15px;
+        padding: 15px;
+
+        &:hover {
+            background-color: $white;
+            color: $primary-color;
+            cursor: pointer;
+            font-weight: 1000;
+
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.output-rating {
+    background-color: lighten($dark-blue, 2%);
+    color: darken($primary-color, 10%);
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+.active {
+    background-color: $light-gray !important;
+    color: $white !important;
+}

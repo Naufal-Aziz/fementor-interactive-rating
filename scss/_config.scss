@@ -1,0 +1,32 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;400&display=swap');
+
+$font-stack: 'Overpass', sans-serif;
+
+// COLORS
+$primary-color: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(217, 12%, 63%);
+$medium-gray: hsl(216, 12%, 54%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+// Margins and padding
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    
+    .py-#{$space} {
+        padding: #{$space}rem;
+    }
+}
